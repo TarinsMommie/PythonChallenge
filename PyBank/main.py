@@ -15,11 +15,16 @@ column_index = 0
         continue 
     Total_Months += 1
     print (f'Total Months: {Total_Months}")
-#Average Change:
+#Total Change:
 column_index = 1
     if not header_skipped:
         header_skipped = True
         continue 
-    Average_Net_Loses += 1
-    print (f'Average Change: {Average_Net_Loses")
-    
+    Total += 1
+    print (f'Total: {Total}")
+  #Average Change
+  column_index = 1
+  total_sum = 0
+  row_count = 0
+  for row in csv_reader:
+    try:
